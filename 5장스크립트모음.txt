@@ -1,0 +1,58 @@
+#---------------------------------------------------
+
+# 5.1	변수 : 요리 그릇
+
+x <- c(1, 2, 3)
+x
+
+class(x)    # 숫자형을 출력
+
+x <- c("A", "B", "C")
+x
+
+class(x)    # 문자형을 출력
+
+df <- data.frame(alphabet = c("A", "B", "C"), number = c(1, 2, 3))
+df
+
+class(df)    #데이터프레임 구조를 출력
+
+x <- c(1, 2, 3)
+x
+
+df <- data.frame(alphabet = c("A", "B", "C"), number = c(1, 2, 3))
+df_2 <- df    # df변수를 df_2변수에 다시 할당
+df_2
+
+x_1 <- c(1, 2, 3)
+x_1
+
+x.2 <- c(1, 2, 3)
+x.2
+
+#---------------------------------------------------
+
+# 5.2 함수 : 요리 도구
+
+x <- c(1, 2, 3, 4)
+x
+min(x)    # 최솟값을 구하는 함수
+max(x)    # 최댓값을 구하는 함수
+
+a <- mean(x)    # 평균을 구하는 함수
+a
+
+class(a)
+
+
+#---------------------------------------------------
+
+# 5.3 패키지 : 요리 도구 세트
+
+install.packages("dplyr")
+library(dplyr)
+
+summarise(iris, avg = mean(Sepal.Length))    # summarise() : 특정 데이터값 요약 함수
+
+remove.packages("dplyr")
+summarise(iris, avg = mean(Sepal.Length))
